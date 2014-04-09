@@ -25,15 +25,17 @@
         var request = new XMLHttpRequest();
         request.open('post', '/chat');
         request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-        request.send('chatMsg');
+        request.send(JSON.stringify({message: chatMsg}));
     }
 
     function updateChat() {
         var allMsgs = JSON.parse(this.responseText);
+        debugger;
+        console.log('allmsgs = ' + allMsgs);
         displayBox.innerText = allMsgs.join('\n');
     }
 
-    setTimeout(function () {
+    setInterval(function () {
         var request = new XMLHttpRequest();
         request.open('get', '/chat');
         request.onload = updateChat;
