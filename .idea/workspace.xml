@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbef60cc-98b4-44e9-89fa-cc77572a220e" name="Default" comment="adding send hat to server&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clientChat.js" afterPath="$PROJECT_DIR$/clientChat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverChat.js" afterPath="$PROJECT_DIR$/serverChat.js" />
+    <list default="true" id="cbef60cc-98b4-44e9-89fa-cc77572a220e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chatApp.iws" />
@@ -217,7 +215,11 @@
       <created>1397062173787</created>
       <updated>1397062173787</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding client - server code&#10;">
+      <created>1397063358455</created>
+      <updated>1397063358455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -258,7 +260,8 @@
     </option>
     <MESSAGE value="adding server code" />
     <MESSAGE value="adding send hat to server" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding send hat to server" />
+    <MESSAGE value="adding client - server code&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding client - server code&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
