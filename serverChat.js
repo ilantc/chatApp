@@ -11,15 +11,24 @@ var app = express();
  */
 app.use(express.bodyParser());
 
+// all the messages
+var allMsgs = [];
+
 /*
  * app.post() defines an handler for HTTP GET requests. You can peek into the request data inside req.body.
  */
 app.post('/chat', function (req, res) {
-    // Add the information received from the client as a new high score
     if (req.body.message) {
         console.log('message received: "' + req.body.message + '"');
+        allMsgs.push(req.body.message);
     }
 });
+
+app.get('/chat', function (req, res) {
+    // return all the chat msgs
+    res.json(JSON.stringify(allMsgs));
+});
+
 
 /*
  * app.listen() starts the HTTP server on the given TCP port.
