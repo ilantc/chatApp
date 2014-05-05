@@ -20,12 +20,13 @@ var allMsgs = [];
 /*
  * app.post() defines an handler for HTTP GET requests. You can peek into the request data inside req.body.
  */
-app.post('/chat', function (req) {
+app.post('/chat', function (req,res) {
     if (req.body.message) {
         console.log('message received: "' + req.body.message + '"');
         allMsgs.push(req.body.message);
         console.log('allMsgs = ' + allMsgs.join("\n"));
     }
+    res.send(null);
 });
 
 app.get('/chat', function (req, res) {
